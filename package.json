@@ -1,0 +1,25 @@
+{
+  "name": "rescript-json-schema-embedded",
+  "version": "0.0.0",
+  "scripts": {
+    "res:build": "rescript",
+    "res:clean": "rescript clean",
+    "res:dev": "rescript -w",
+    "generate": "chmod +x ./src/Cli.mjs && ./src/Cli.mjs generate --output ./src/__generated__ --src ./src/"
+  },
+  "keywords": [
+    "rescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@glennsl/rescript-fetch": "0.2.0",
+    "@rescript/core": "1.5.0",
+    "chokidar": "^3.6.0",
+    "fast-glob": "^3.3.2",
+    "rescript": "11.1.1",
+    "rescript-embed-lang": "0.5.2",
+    "rescript-json-schema": "6.0.0",
+    "rescript-nodejs": "16.1.0"
+  }
+}

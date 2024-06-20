@@ -1,0 +1,22 @@
+{
+  "name": "rescript-json-schema-embedded",
+  "sources": {
+    "dir": "src",
+    "subdirs": true
+  },
+  "package-specs": {
+    "module": "esmodule",
+    "in-source": true
+  },
+  "suffix": ".mjs",
+  "bs-dependencies": [
+    "@rescript/core",
+    "rescript-embed-lang",
+    "rescript-json-schema",
+    "rescript-nodejs",
+    "@glennsl/rescript-fetch",
+    "rescript-schema"
+  ],
+  "bsc-flags": ["-open RescriptCore"],
+  "ppx-flags": [["rescript-embed-lang/ppx", "-enable-generic-transform"]]
+}

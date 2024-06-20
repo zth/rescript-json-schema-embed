@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "Id": { "type": "number" },
+    "Title": { "type": "string" },
+    "Tags": { "items": { "type": "string" }, "type": "array", "default": [] },
+    "Age": {
+      "type": "integer",
+      "deprecated": true,
+      "description": "Use rating instead"
+    }
+  },
+  "additionalProperties": true,
+  "required": ["Id", "Title"]
+}
