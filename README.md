@@ -1,23 +1,16 @@
-# ReScript Project Template
+```rescript
+open RescriptSchema
 
-- [Installation](../../README.md)
+module TestSchema = %generated.jsonSchema("./testschema.json")
 
-Official ReScript starter template.
+let data = %raw(`{
+  "Id": 1,
+  "Title": "My first film",
+  "Age": 17
+}`)
 
-## Installation
-
-```sh
-npm install
-```
-
-## Build
-
-- Build: `npm run res:build`
-- Clean: `npm run res:clean`
-- Build & watch: `npm run res:dev`
-
-## Run
-
-```sh
-node src/Demo.res.js
+switch data->S.parseWith(TestSchema.schema) {
+| Ok(content) => Console.log(content)
+| Error(err) => Console.error(err)
+}
 ```
