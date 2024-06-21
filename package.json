@@ -15,10 +15,11 @@
   "dependencies": {
     "@glennsl/rescript-fetch": "0.2.0",
     "@rescript/core": "1.5.0",
+    "@rescript/tools": "0.6.4",
     "chokidar": "^3.6.0",
     "fast-glob": "^3.3.2",
     "rescript": "11.1.1",
-    "rescript-embed-lang": "0.5.2",
+    "rescript-embed-lang": "0.5.5",
     "rescript-json-schema": "6.0.0",
     "rescript-nodejs": "16.1.0"
   }
